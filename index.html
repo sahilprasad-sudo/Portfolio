@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Prasad — iOS Developer & Software Engineer Portfolio</title>
+  <meta name="description" content="Interactive Apple-inspired portfolio of Sahil Prasad — iOS Developer specializing in Swift, SwiftUI, Combine, React, Generative AI, System Design, and DSA in Java. Showcasing the flagship Crypto iOS App." />
+  <link rel="icon" type="image/png" href="../Crypto/Assets.xcassets/logo.imageset/image.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ambient Titanium & Cyan Lighting Canvas -->
+  <div class="ambient-canvas" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- Apple-Style Frosted Global Navigation -->
+  <header class="apple-nav">
+    <div class="nav-container">
+      <a href="#top" class="brand-link">
+        <img src="../Crypto/Assets.xcassets/logo.imageset/image.png" alt="Crypto App Logo" class="brand-logo-img" />
+        <span>Sahil Prasad</span>
+        <span class="brand-status-dot" title="Available for iOS & Software Engineering Roles"></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#top" class="active">Overview</a></li>
+        <li><a href="#crypto-showcase">Crypto iOS App</a></li>
+        <li><a href="#code-architecture">Swift Architecture</a></li>
+        <li><a href="#skills">Tech Arsenal</a></li>
+        <li><a href="#projects">Projects &amp; Slots</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta-group">
+        <a href="mailto:notsahilprasad@gmail.com" class="btn-pill btn-glass btn-sm">notsahilprasad@gmail.com</a>
+        <a href="#contact" class="btn-pill btn-primary btn-sm">Hire Sahil</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Apple Product Sub-Ribbon -->
+  <div class="product-ribbon">
+    <div class="ribbon-inner">
+      <span class="ribbon-badge">
+        <span>●</span> Flagship Showcase: <strong>Crypto iOS</strong> — 36 Swift Files • Live INR Markets • GoldRush Multi-Chain • India VDA Tax (Sec 115BBH &amp; 194S)
+      </span>
+      <div style="display:flex;gap:14px;align-items:center;">
+        <a href="tel:9102513457" style="color:var(--text-secondary);text-decoration:none;">📞 +91 9102513457</a>
+        <a href="#crypto-showcase" style="color:var(--accent-cyan);text-decoration:none;font-weight:600;">Try Live iPhone Simulator ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       HERO SECTION + INTERACTIVE IPHONE 16 PRO MAX SIMULATOR
+       ======================================================================== -->
+  <main id="top">
+    <section class="section-container hero-section" id="crypto-showcase">
+      <div class="hero-grid">
+        
+        <!-- Left Column: Developer Identity & Flagship Highlights -->
+        <div>
+          <div class="eyebrow">
+            <span></span> iOS Developer • Full-Stack &amp; AI Engineer
+          </div>
+          <h1 class="hero-title">
+            Hi, I’m <span class="gradient-text">Sahil Prasad.</span><br />
+            I engineer fluid native iOS experiences.
+          </h1>
+          <p class="hero-description">
+            An iOS developer and software engineer crafting high-precision Swift &amp; SwiftUI applications backed by reactive Combine pipelines, scalable <strong>System Design</strong>, <strong>DSA in Java</strong>, modern web stacks (<strong>React, Tailwind, JS</strong>), and <strong>Generative AI</strong>. Explore my flagship <strong>Crypto iOS app</strong> live in the interactive simulator beside you.
+          </p>
+
+          <div class="hero-actions">
+            <button onclick="switchSimulatorTab('home')" class="btn-pill btn-primary">
+              <span>▶</span> Launch Live Markets
+            </button>
+            <button onclick="switchSimulatorTab('portfolio')" class="btn-pill btn-glass">
+              <span>⛓</span> Test Multi-Chain Wallet
+            </button>
+            <button onclick="switchSimulatorTab('vda')" class="btn-pill btn-glass">
+              <span>₹</span> Try India VDA Tax Engine
+            </button>
+          </div>
+
+          <div class="hero-metrics-strip">
+            <div class="metric-item">
+              <div class="metric-val">36</div>
+              <div class="metric-lbl">Native Swift Files in Crypto App</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-val">9 Chains</div>
+              <div class="metric-lbl">EVM, Solana &amp; Bitcoin Indexed</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-val">31.2%</div>
+              <div class="metric-lbl">Sec 115BBH + 1% TDS Engine</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-val">12+</div>
+              <div class="metric-lbl">Core Tech &amp; CS Domains</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive iPhone 16 Pro Max Running Sahil's Crypto App -->
+        <div class="simulator-stage">
+          <div class="simulator-mode-bar" role="tablist" aria-label="Crypto App Screen Switcher">
+            <button class="sim-tab-trigger active" data-tab="home" onclick="switchSimulatorTab('home')">
+              📈 HomeView
+            </button>
+            <button class="sim-tab-trigger" data-tab="portfolio" onclick="switchSimulatorTab('portfolio')">
+              👛 PortfolioView
+            </button>
+            <button class="sim-tab-trigger" data-tab="vda" onclick="switchSimulatorTab('vda')">
+              🇮🇳 VDATaxView
+            </button>
+          </div>
+
+          <div class="iphone-frame">
+            <div class="iphone-screen">
+              
+              <!-- iOS Status Bar & Interactive Dynamic Island -->
+              <div class="ios-status-bar">
+                <span>9:41</span>
+                <div class="dynamic-island" id="dynamicIsland" onclick="triggerIslandHaptic('HapticManager.impact()')">
+                  <span class="island-dot"></span>
+                  <span class="island-label" id="islandLabel">Crypto • Live</span>
+                </div>
+                <span>5G 100%</span>
+              </div>
+
+              <!-- Interactive CoinDetailView Scrubbing Sheet Overlay -->
+              <div class="ios-detail-sheet" id="iosCoinDetailSheet">
+                <div id="iosCoinDetailContent"></div>
+              </div>
+
+              <!-- Scrollable Tab Viewport -->
+              <div class="ios-tab-viewport">
+                
+                <!-- TAB 1: HomeView.swift -->
+                <div class="ios-screen-pane active" id="pane-home">
+                  <!-- Full-Bleed News Banner (CryptoNewsBannerView.swift) -->
+                  <div class="ios-news-banner" id="simNewsBanner" title="Click to cycle NewsData.io headlines">
+                    <div class="news-badge-row">
+                      <span class="news-source-pill" id="simNewsSource">NewsData.io • Live Feed</span>
+                      <button class="news-cycle-btn">Next Headline ↻</button>
+                    </div>
+                    <div class="news-headline-text" id="simNewsTitle">
+                      Institutional Inflows Push Bitcoin Above ₹61.4L Across Indian FIU Spot Exchanges
+                    </div>
+                  </div>
+
+                  <!-- Search Bar -->
+                  <div class="ios-search-box">
+                    <span>🔍</span>
+                    <input type="text" id="simCoinSearch" placeholder="Search coins by name or symbol..." />
+                  </div>
+
+                  <!-- Interactive Filter Chips (FilterOption enum) -->
+                  <div class="ios-pills-row">
+                    <button class="ios-pill sim-filter-pill active" data-filter="All">All</button>
+                    <button class="ios-pill sim-filter-pill" data-filter="Top Gainers">📈 Top Gainers</button>
+                    <button class="ios-pill sim-filter-pill" data-filter="Top Losers">📉 Top Losers</button>
+                    <button class="ios-pill sim-filter-pill" data-filter="Watchlist">★ Watchlist<span id="favPillCount"> (2)</span></button>
+                  </div>
+
+                  <!-- Interactive Sort Column Headers -->
+                  <div class="ios-col-headers">
+                    <span onclick="simState.coinSort = simState.coinSort === 'rank' ? 'rankRev' : 'rank'; renderHomeCoins(); triggerIslandHaptic('Sorted by Rank')">Coin ⇅</span>
+                    <span>7D Trend</span>
+                    <span onclick="simState.coinSort = simState.coinSort === 'price' ? 'change' : 'price'; renderHomeCoins(); triggerIslandHaptic('Sorted by Price / 24h')">Price / 24h % ⇅</span>
+                  </div>
+
+                  <!-- Coin Rows (Tap any row to open CoinDetailView scrubbing chart!) -->
+                  <div class="ios-coin-list" id="simCoinList"></div>
+                </div>
+
+                <!-- TAB 2: PortfolioView.swift (GoldRush Multi-Chain) -->
+                <div class="ios-screen-pane" id="pane-portfolio">
+                  <div style="padding:4px 12px 6px;display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                      <div style="font-size:0.84rem;font-weight:800;">👛 On-Chain Portfolio</div>
+                      <div style="font-size:0.62rem;color:var(--text-secondary);">Powered by GoldRush • Multi-Chain INR Tracker</div>
+                    </div>
+                    <span style="font-size:0.62rem;background:rgba(48,209,88,0.16);color:#30d158;padding:3px 8px;border-radius:999px;font-weight:700;">20m Auto-Sync</span>
+                  </div>
+
+                  <div class="wallet-bar">
+                    <input type="text" id="simWalletInput" value="vitalik.eth" placeholder="Enter 0x..., ENS, bc1q..., or Sol..." />
+                    <button onclick="triggerIslandHaptic('Synced ' + document.getElementById('simWalletInput').value); renderPortfolioTab();">Track</button>
+                  </div>
+
+                  <!-- Multi-Chain Selector Pills (PortfolioChain enum) -->
+                  <div class="ios-pills-row">
+                    <button class="ios-pill sim-chain-pill active" data-chain="all-evm">All EVM (4)</button>
+                    <button class="ios-pill sim-chain-pill" data-chain="eth-mainnet">Ethereum</button>
+                    <button class="ios-pill sim-chain-pill" data-chain="matic-mainnet">Polygon</button>
+                    <button class="ios-pill sim-chain-pill" data-chain="base-mainnet">Base</button>
+                    <button class="ios-pill sim-chain-pill" data-chain="arbitrum-mainnet">Arbitrum</button>
+                  </div>
+
+                  <!-- Net Worth Summary Card -->
+                  <div class="ios-portfolio-card">
+                    <div style="font-size:0.64rem;color:var(--text-secondary);">Total Multi-Chain Net Worth (INR)</div>
+                    <div style="font-size:1.35rem;font-weight:800;margin:2px 0;" id="simPortfolioTotal">₹10,51,649.42</div>
+                    <div style="font-size:0.68rem;font-weight:700;" id="simPortfolioChange" class="pos">+₹24,137.88 (+2.35% 24h)</div>
+                    <div class="allocation-bar" id="simAllocationBar" title="Chain Allocation Breakdown"></div>
+                  </div>
+
+                  <!-- Filter & Hide Dust (< ₹100) -->
+                  <div style="display:flex;gap:6px;padding:0 12px 8px;">
+                    <input type="text" id="simPortfolioSearch" placeholder="Filter holdings by token or chain..." style="flex:1;background:rgba(255,255,255,0.08);border:none;border-radius:9px;padding:6px 10px;color:#fff;font-size:0.68rem;outline:none;" />
+                    <button class="ios-pill" id="simDustBtn" style="border-radius:9px;">👁 Dust &lt; ₹100</button>
+                  </div>
+
+                  <div class="ios-coin-list" id="simPortfolioAssets"></div>
+                </div>
+
+                <!-- TAB 3: VDATaxEstimatorView.swift (India Sec 115BBH & 194S) -->
+                <div class="ios-screen-pane" id="pane-vda">
+                  <div style="padding:4px 12px 6px;">
+                    <div style="font-size:0.84rem;font-weight:800;">₹ India VDA Tax &amp; 1% TDS</div>
+                    <div style="font-size:0.61rem;color:var(--text-secondary);">Sec 115BBH (30% Tax + 4% Cess) • Sec 194S (1% TDS)</div>
+                  </div>
+
+                  <div class="vda-card">
+                    <div class="vda-seg-row">
+                      <button class="vda-seg-btn active" data-mode="buy">↙ Buy Crypto</button>
+                      <button class="vda-seg-btn" data-mode="sell">↗ Sell / Exit</button>
+                    </div>
+
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                      <div class="vda-input-group">
+                        <label>Select Asset</label>
+                        <select id="vdaCoinSelect">
+                          <option value="bitcoin">Bitcoin (BTC)</option>
+                          <option value="ethereum">Ethereum (ETH)</option>
+                          <option value="solana">Solana (SOL)</option>
+                          <option value="polygon">Polygon (POL)</option>
+                        </select>
+                      </div>
+                      <div class="vda-input-group">
+                        <label>Settlement Mode (Sec 194S)</label>
+                        <select id="vdaExchangeSelect">
+                          <option value="inrSpot">INR Spot (0% Buy TDS)</option>
+                          <option value="cryptoSwap">Crypto Swap (1% TDS)</option>
+                          <option value="p2pDirect">P2P Direct (1% TDS)</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="vda-input-group">
+                      <label>Transaction Amount (INR)</label>
+                      <input type="number" id="vdaAmountInput" value="50000" step="1000" />
+                    </div>
+
+                    <div class="vda-input-group" id="vdaCostGroup" style="display:none;">
+                      <label>Cost of Acquisition (INR) — Sec 115BBH(2)(a)</label>
+                      <input type="number" id="vdaCostInput" value="35000" step="1000" />
+                    </div>
+
+                    <div class="vda-breakdown-box" id="vdaBreakdownOutput"></div>
+
+                    <button onclick="recordVDABuyNote()" style="width:100%;margin-top:8px;background:var(--accent-cyan);color:#000;border:none;border-radius:10px;padding:8px;font-size:0.72rem;font-weight:800;cursor:pointer;">
+                      + Take Note of Buy (Timestamp Ledger)
+                    </button>
+                  </div>
+
+                  <div style="padding:0 12px;">
+                    <div style="font-size:0.72rem;font-weight:700;margin-bottom:6px;">
+                      Buy Time Notes &amp; Live "If Sold Now" Profit
+                    </div>
+                    <div id="vdaNotesList"></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- iOS Native TabView Bar (MainTabView.swift) -->
+              <div class="ios-tab-bar">
+                <button class="ios-tab-item active" data-tab="home" onclick="switchSimulatorTab('home')">
+                  <span style="font-size:1rem;">🏠</span>
+                  <span>Home</span>
+                </button>
+                <button class="ios-tab-item" data-tab="portfolio" onclick="switchSimulatorTab('portfolio')">
+                  <span style="font-size:1rem;">👛</span>
+                  <span>Portfolio</span>
+                </button>
+                <button class="ios-tab-item" data-tab="vda" onclick="switchSimulatorTab('vda')">
+                  <span style="font-size:1rem;">₹</span>
+                  <span>VDA Tax</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+          <p style="font-size:0.75rem;color:var(--text-muted);margin-top:12px;text-align:center;">
+            Interactive Simulation of Sahil’s <code>Crypto.xcodeproj</code> • Tap any coin row to scrub its 7-day chart or switch tabs
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2: INSIDE THE CRYPTO APP ARCHITECTURE + XCODE CODE INSPECTOR
+         ====================================================================== -->
+    <section class="section-container" id="code-architecture">
+      <div class="section-header">
+        <div class="eyebrow">Engineered in Swift &amp; SwiftUI</div>
+        <h2 class="section-title">Inside the Crypto iOS Architecture.</h2>
+        <p class="section-subtitle">
+          Built from the ground up across 36 modular Swift files using MVVM, reactive Combine publishers, multi-chain parallel aggregation, and statutory Indian VDA tax math.
+        </p>
+      </div>
+
+      <!-- 3 Architectural Pillar Cards -->
+      <div class="feature-showcase-grid">
+        <article class="apple-card">
+          <div class="card-icon-wrap">⚡</div>
+          <h3>Reactive Combine Market Engine</h3>
+          <p>
+            Streams top 250 coins in INR from CoinGecko with 7-day sparklines. Uses a 5-way <code>Publishers.CombineLatest4</code> pipeline in <code>HomeViewModel</code> for zero-latency search, category filtering, watchlist persistence, and gesture-scrubbed <code>GeometryReader</code> charts.
+          </p>
+          <div class="file-tag-list">
+            <span class="file-chip">HomeViewModel.swift</span>
+            <span class="file-chip">CoinDetailView.swift</span>
+            <span class="file-chip">CryptoNewsDataService.swift</span>
+          </div>
+        </article>
+
+        <article class="apple-card">
+          <div class="card-icon-wrap">⛓</div>
+          <h3>GoldRush Multi-Chain Wallet Indexer</h3>
+          <p>
+            Aggregates live on-chain token balances in INR across Ethereum, Polygon, BNB Chain, Arbitrum, Optimism, Base, Avalanche, Solana, and Bitcoin using <code>Publishers.MergeMany</code>, auto-detecting wallet address formats with a 20-minute persistent cache.
+          </p>
+          <div class="file-tag-list">
+            <span class="file-chip">GoldRushPortfolioService.swift</span>
+            <span class="file-chip">PortfolioView.swift</span>
+            <span class="file-chip">PortfolioAssetModel.swift</span>
+          </div>
+        </article>
+
+        <article class="apple-card">
+          <div class="card-icon-wrap">🇮🇳</div>
+          <h3>India VDA Tax &amp; 1% TDS Simulator</h3>
+          <p>
+            Implements Indian Income Tax Act <strong>Section 115BBH</strong> (30% flat tax + 4% Health &amp; Education Cess = 31.2% effective rate, strictly isolating non-offsettable losses) and <strong>Section 194S</strong> (1% TDS on INR Spot, Crypto-to-Crypto swaps &amp; P2P transfers).
+          </p>
+          <div class="file-tag-list">
+            <span class="file-chip">VDATaxViewModel.swift</span>
+            <span class="file-chip">VDATaxEstimatorView.swift</span>
+            <span class="file-chip">VDATaxModel.swift</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Interactive Xcode Swift Source Code Explorer -->
+      <div class="xcode-window">
+        <div class="xcode-titlebar">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div class="window-dots">
+              <span class="win-dot red"></span>
+              <span class="win-dot yellow"></span>
+              <span class="win-dot green"></span>
+            </div>
+            <span style="font-family:var(--font-mono);font-size:0.78rem;color:var(--text-secondary);" id="xcodeFilePath">
+              Crypto/Core/Home/ViewModels/HomeViewModel.swift
+            </span>
+          </div>
+
+          <div class="xcode-tabs">
+            <button class="xcode-tab active" data-file="HomeViewModel.swift" onclick="selectSwiftFile('HomeViewModel.swift')">HomeViewModel.swift</button>
+            <button class="xcode-tab" data-file="GoldRushPortfolioService.swift" onclick="selectSwiftFile('GoldRushPortfolioService.swift')">GoldRushPortfolioService.swift</button>
+            <button class="xcode-tab" data-file="VDATaxViewModel.swift" onclick="selectSwiftFile('VDATaxViewModel.swift')">VDATaxViewModel.swift</button>
+            <button class="xcode-tab" data-file="CoinDetailView.swift" onclick="selectSwiftFile('CoinDetailView.swift')">CoinDetailView.swift</button>
+          </div>
+
+          <span style="font-size:0.72rem;color:var(--accent-teal);font-family:var(--font-mono);" id="xcodeFileMeta">
+            178 lines • Combine Reactive Pipeline
+          </span>
+        </div>
+
+        <div class="xcode-body">
+          <aside class="xcode-sidebar">
+            <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:8px;">
+              Crypto.xcodeproj (36 Swift Files)
+            </div>
+            <div class="tree-folder">📂 Core / Home</div>
+            <div class="tree-file active" data-file="HomeViewModel.swift" onclick="selectSwiftFile('HomeViewModel.swift')">
+              <span>HomeViewModel.swift</span><span>M</span>
+            </div>
+            <div class="tree-file" data-file="CoinDetailView.swift" onclick="selectSwiftFile('CoinDetailView.swift')">
+              <span>CoinDetailView.swift</span><span>V</span>
+            </div>
+            <div class="tree-folder">📂 Services / Web3</div>
+            <div class="tree-file" data-file="GoldRushPortfolioService.swift" onclick="selectSwiftFile('GoldRushPortfolioService.swift')">
+              <span>GoldRushPortfolioService.swift</span><span>S</span>
+            </div>
+            <div class="tree-folder">📂 Core / Tax (India VDA)</div>
+            <div class="tree-file" data-file="VDATaxViewModel.swift" onclick="selectSwiftFile('VDATaxViewModel.swift')">
+              <span>VDATaxViewModel.swift</span><span>M</span>
+            </div>
+          </aside>
+
+          <div class="xcode-editor">
+            <pre id="xcodeCodeBlock"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3: SAHIL PRASAD'S TECHNICAL ARSENAL (ALL 12 REQUESTED SKILLS)
+         ====================================================================== -->
+    <section class="section-container" id="skills">
+      <div class="section-header">
+        <div class="eyebrow">Full-Spectrum Engineering</div>
+        <h2 class="section-title">Technical Arsenal.</h2>
+        <p class="section-subtitle">
+          Combining native iOS craftsmanship in <strong>Swift</strong> with strong algorithmic foundations in <strong>DSA in Java</strong>, <strong>System Design</strong>, modern frontend engineering (<strong>React, JS, HTML, CSS, Tailwind</strong>), <strong>Python</strong>, and <strong>Generative AI</strong>.
+        </p>
+      </div>
+
+      <div class="skills-filter-bar">
+        <button class="skill-filter-btn active" data-cat="all" onclick="renderSkillsGrid('all')">All Domains (11 Cards • 12 Skills)</button>
+        <button class="skill-filter-btn" data-cat="ios" onclick="renderSkillsGrid('ios')"> iOS &amp; Swift</button>
+        <button class="skill-filter-btn" data-cat="cs" onclick="renderSkillsGrid('cs')">🧠 System Design &amp; DSA in Java</button>
+        <button class="skill-filter-btn" data-cat="web" onclick="renderSkillsGrid('web')">🌐 React, JS, HTML, CSS &amp; Tailwind</button>
+        <button class="skill-filter-btn" data-cat="ai" onclick="renderSkillsGrid('ai')">✨ Generative AI &amp; Python</button>
+        <button class="skill-filter-btn" data-cat="tools" onclick="renderSkillsGrid('tools')">🔧 Git &amp; GitHub</button>
+      </div>
+
+      <div class="skills-bento-grid" id="skillsBentoGrid"></div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 4: PROJECTS SHOWCASE & EXPANDABLE FUTURE PROJECT SLOTS
+         ====================================================================== -->
+    <section class="section-container" id="projects">
+      <div class="section-header">
+        <div class="eyebrow">Portfolio &amp; Upcoming Roadmap</div>
+        <h2 class="section-title">Featured Work &amp; Future Slots.</h2>
+        <p class="section-subtitle">
+          A dedicated showcase starting with the flagship <strong>Crypto iOS App</strong> and pre-architected expansion slots ready for upcoming iOS, Generative AI, React, and System Design builds.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- SLOT 01: FLAGSHIP CRYPTO IOS APP -->
+        <article class="project-card featured">
+          <div>
+            <div class="eyebrow" style="margin-bottom:12px;">Flagship iOS Application • 2026</div>
+            <h3 style="font-size:2rem;font-weight:800;letter-spacing:-0.03em;margin-bottom:12px;">
+              Crypto — Multi-Chain INR Portfolio, Live Markets &amp; India VDA Tax Suite
+            </h3>
+            <p style="color:var(--text-secondary);font-size:0.98rem;line-height:1.65;">
+              A full-featured native iOS application built in SwiftUI and Combine. Tracks 250+ live cryptocurrencies in INR with interactive 7-day scrubbing charts, aggregates real-time multi-chain Web3 balances across 9 networks via the GoldRush API, streams curated crypto news from NewsData.io, and computes statutory Indian crypto taxes (30% tax + 4% cess u/s 115BBH &amp; 1% TDS u/s 194S) with a persistent Buy Time Notes ledger.
+            </p>
+            <div class="stack-pills">
+              <span class="stack-pill">Swift 5.9+</span>
+              <span class="stack-pill">SwiftUI</span>
+              <span class="stack-pill">Combine</span>
+              <span class="stack-pill">GoldRush Web3 API</span>
+              <span class="stack-pill">CoinGecko API</span>
+              <span class="stack-pill">NewsData.io</span>
+              <span class="stack-pill">MVVM Architecture</span>
+              <span class="stack-pill">Haptics &amp; Caching</span>
+            </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="#crypto-showcase" class="btn-pill btn-primary">Interact with Simulator ↑</a>
+              <a href="#code-architecture" class="btn-pill btn-glass">Inspect Swift Code</a>
+            </div>
+          </div>
+
+          <div style="background:rgba(0,0,0,0.45);border:1px solid rgba(255,255,255,0.1);border-radius:22px;padding:24px;text-align:center;">
+            <img src="../Crypto/Assets.xcassets/logo.imageset/image.png" alt="Crypto App Icon" style="width:110px;height:110px;border-radius:26px;box-shadow:0 16px 40px rgba(0,245,212,0.3);margin-bottom:16px;" />
+            <div style="font-weight:800;font-size:1.1rem;margin-bottom:6px;">Crypto.xcodeproj</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:16px;">
+              3 Core Modules • 36 Swift Source Files • Custom Dark Theme Asset Catalog
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:left;font-size:0.75rem;">
+              <div style="background:rgba(255,255,255,0.05);padding:10px;border-radius:10px;">
+                <strong style="color:var(--accent-teal);">Home Module</strong><br />8 Views + Combine VM
+              </div>
+              <div style="background:rgba(255,255,255,0.05);padding:10px;border-radius:10px;">
+                <strong style="color:var(--accent-cyan);">Portfolio Module</strong><br />5 Views + GoldRush Service
+              </div>
+              <div style="background:rgba(255,255,255,0.05);padding:10px;border-radius:10px;">
+                <strong style="color:var(--accent-purple);">VDA Tax Module</strong><br />6 Views + Sec 115BBH VM
+              </div>
+              <div style="background:rgba(255,255,255,0.05);padding:10px;border-radius:10px;">
+                <strong style="color:var(--accent-green);">Core Utilities</strong><br />Networking &amp; Haptics
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SLOT 02: RESERVED FOR GENERATIVE AI / IOS PROJECT -->
+        <article class="project-card placeholder-slot" id="project-slot-2">
+          <div>
+            <div class="slot-status-pill">⏳ Project Slot 02 • Ready for Next Build</div>
+            <h3 style="font-size:1.45rem;font-weight:800;margin-bottom:10px;">
+              Upcoming: Generative AI + Native iOS / React App
+            </h3>
+            <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.6;">
+              Reserved space for your next flagship project combining Generative AI, Python backend pipelines, and an ultra-responsive SwiftUI or React + Tailwind interface. Click below to preview or populate this slot anytime.
+            </p>
+            <div class="stack-pills">
+              <span class="stack-pill">Generative AI</span>
+              <span class="stack-pill">Swift / React</span>
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">Tailwind CSS</span>
+            </div>
+          </div>
+          <div>
+            <button onclick="openProjectSlotModal('project-slot-2')" class="btn-pill btn-glass btn-sm">
+              + Customize / Populate Project Slot 02
+            </button>
+          </div>
+        </article>
+
+        <!-- SLOT 03: RESERVED FOR SYSTEM DESIGN / DSA / FULL-STACK PROJECT -->
+        <article class="project-card placeholder-slot" id="project-slot-3">
+          <div>
+            <div class="slot-status-pill">⏳ Project Slot 03 • Ready for Next Build</div>
+            <h3 style="font-size:1.45rem;font-weight:800;margin-bottom:10px;">
+              Upcoming: Scalable System Design &amp; Algorithmic Engine
+            </h3>
+            <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.6;">
+              Reserved space for a high-throughput distributed system, Java algorithmic service, or full-stack web application. Pre-styled with Apple glassmorphism and ready to drop in.
+            </p>
+            <div class="stack-pills">
+              <span class="stack-pill">System Design</span>
+              <span class="stack-pill">Java / DSA</span>
+              <span class="stack-pill">JavaScript</span>
+              <span class="stack-pill">Git &amp; GitHub</span>
+            </div>
+          </div>
+          <div>
+            <button onclick="openProjectSlotModal('project-slot-3')" class="btn-pill btn-glass btn-sm">
+              + Customize / Populate Project Slot 03
+            </button>
+          </div>
+        </article>
+
+        <!-- SLOT 04: OPEN EXPANSION SLOT -->
+        <article class="project-card placeholder-slot" id="project-slot-4" style="grid-column: span 2;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+            <div>
+              <div class="slot-status-pill">✨ Project Slot 04 • Open Expansion</div>
+              <h3 style="font-size:1.35rem;font-weight:800;margin-bottom:6px;">
+                Have another project ready to showcase?
+              </h3>
+              <p style="color:var(--text-secondary);font-size:0.9rem;">
+                Test filling this card interactively right now in your browser, or add new entries directly inside <code>index.html</code>.
+              </p>
+            </div>
+            <button onclick="openProjectSlotModal('project-slot-4')" class="btn-pill btn-primary">
+              + Add Project to Slot 04
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 5: CONTACT & DIRECT REACH (SAHIL PRASAD)
+         ====================================================================== -->
+    <section class="section-container" id="contact">
+      <div class="contact-dock">
+        <div>
+          <div class="eyebrow">Let’s Build Something Extraordinary</div>
+          <h2 style="font-size:clamp(2rem,3.8vw,3rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;margin-bottom:14px;">
+            Get in touch with Sahil Prasad.
+          </h2>
+          <p style="color:var(--text-secondary);font-size:1rem;line-height:1.6;">
+            Available for iOS Developer roles, full-stack engineering opportunities, and ambitious product collaborations. Reach out directly via email or phone.
+          </p>
+
+          <div class="contact-methods-list">
+            <div class="contact-item-card">
+              <div class="contact-meta">
+                <span class="contact-label">Full Name &amp; Role</span>
+                <span class="contact-value">Sahil Prasad — iOS Developer</span>
+              </div>
+              <span style="font-size:1.3rem;"></span>
+            </div>
+
+            <div class="contact-item-card">
+              <div class="contact-meta">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:notsahilprasad@gmail.com" class="contact-value">notsahilprasad@gmail.com</a>
+              </div>
+              <div style="display:flex;gap:8px;">
+                <button onclick="copyTextWithToast('notsahilprasad@gmail.com', 'Email')" class="btn-pill btn-glass btn-sm">Copy</button>
+                <a href="mailto:notsahilprasad@gmail.com" class="btn-pill btn-primary btn-sm">Email ↗</a>
+              </div>
+            </div>
+
+            <div class="contact-item-card">
+              <div class="contact-meta">
+                <span class="contact-label">Phone Number</span>
+                <a href="tel:9102513457" class="contact-value">+91 9102513457</a>
+              </div>
+              <div style="display:flex;gap:8px;">
+                <button onclick="copyTextWithToast('9102513457', 'Phone Number')" class="btn-pill btn-glass btn-sm">Copy</button>
+                <a href="tel:9102513457" class="btn-pill btn-primary btn-sm">Call ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Interactive Message Composer -->
+        <div class="contact-form-panel">
+          <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:6px;">Send a Quick Message</h3>
+          <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:18px;">
+            Pre-fills an email directly to <strong>notsahilprasad@gmail.com</strong>.
+          </p>
+          <form onsubmit="handleDirectContactSubmit(event)">
+            <div class="form-field">
+              <label for="visitorName">Your Name / Company</label>
+              <input type="text" id="visitorName" placeholder="e.g. Alex from Apple / Hiring Team" required />
+            </div>
+            <div class="form-field">
+              <label for="visitorSubject">Subject</label>
+              <input type="text" id="visitorSubject" placeholder="iOS Developer Role / Project Inquiry" required />
+            </div>
+            <div class="form-field">
+              <label for="visitorMessage">Message</label>
+              <textarea id="visitorMessage" rows="4" placeholder="Hi Sahil, loved trying your interactive Crypto iOS simulator..." required></textarea>
+            </div>
+            <button type="submit" class="btn-pill btn-primary" style="width:100%;">
+              Compose Email to Sahil ↗
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Customizing Future Project Slots -->
+  <div class="modal-backdrop" id="projectSlotModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h3 style="font-size:1.25rem;font-weight:800;">Populate Project Slot</h3>
+        <button onclick="closeProjectSlotModal()" style="background:transparent;border:none;color:var(--text-secondary);font-size:1.3rem;cursor:pointer;">✕</button>
+      </div>
+      <form onsubmit="saveCustomProjectSlot(event)">
+        <div class="form-field">
+          <label for="slotTitleInput">Project Title</label>
+          <input type="text" id="slotTitleInput" placeholder="e.g. AI Code Reviewer &amp; iOS Companion" required />
+        </div>
+        <div class="form-field">
+          <label for="slotStackInput">Tech Stack (comma separated)</label>
+          <input type="text" id="slotStackInput" placeholder="SwiftUI, Generative AI, Python, React, Tailwind" required />
+        </div>
+        <div class="form-field">
+          <label for="slotDescInput">Project Summary</label>
+          <textarea id="slotDescInput" rows="3" placeholder="Describe the architecture, problem solved, and impact..." required></textarea>
+        </div>
+        <div class="form-field">
+          <label for="slotLinkInput">GitHub / Live Demo Link (optional)</label>
+          <input type="text" id="slotLinkInput" placeholder="https://github.com/..." />
+        </div>
+        <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px;">
+          <button type="button" onclick="closeProjectSlotModal()" class="btn-pill btn-glass">Cancel</button>
+          <button type="submit" class="btn-pill btn-primary">Save to Portfolio Card</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Pill -->
+  <div class="apple-toast" id="appleToast" role="status" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="apple-footer">
+    <p>
+      Designed &amp; Engineered for <strong>Sahil Prasad</strong> • iOS Developer •
+      <a href="mailto:notsahilprasad@gmail.com" style="color:var(--accent-cyan);text-decoration:none;">notsahilprasad@gmail.com</a> •
+      <a href="tel:9102513457" style="color:var(--accent-cyan);text-decoration:none;">+91 9102513457</a>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
